@@ -13,7 +13,7 @@ export default function App() {
         <header>Caspio Career Page Example</header>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/:jid/:jt" component={Apply} />
+          <Route exact path="/:jid/:jt" component={Apply} />
           <Route exact path="/admin" component={Admin} />
         </Switch>
       </Container>
