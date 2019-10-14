@@ -1,0 +1,24 @@
+body,
+html {
+  height: 100vh;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  color: black;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  font-size: 30px;
+  border-bottom: 3px solid black;
+  padding: 20px 0;
+}
+
+.candidate-content {
+  background-color: aliceblue;
+}
+
+.content {
+  margin: 3vh 3vw;
+}
