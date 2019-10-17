@@ -12,9 +12,17 @@ export default function App() {
       <Container>
         <header>Caspio Career Page Example</header>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/:jid/:jt" component={Apply} />
-          <Route exact path="/admin" component={Admin} />
+          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/:jid/:jt"}
+            component={Apply}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/admin"}
+            component={Admin}
+          />
         </Switch>
       </Container>
     </div>
