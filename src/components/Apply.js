@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Button } from "reactstrap";
 
 export default function Apply() {
   let { jid, jt } = useParams();
@@ -30,7 +31,15 @@ export default function Apply() {
 
   return (
     <div className="content">
-      <h4>Applying for {jt.slice(3)}</h4>
+      <div style={{ textAlign: "left" }}>
+        <Button
+          style={{ backgroundColor: "#6D91A0" }}
+          onClick={() => window.history.back()}
+        >
+          Back
+        </Button>
+        <h4 style={{ padding: "2vh 0" }}>Applying for {jt.slice(3)}</h4>
+      </div>
       <div id="apply_content"></div>
     </div>
   );
